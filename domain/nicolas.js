@@ -8,7 +8,7 @@ module.exports = function () {
         port: 80
       },
       {
-        origin: 'mean-template',
+        origin: 'blog',
         target: 'http://www.google.com',
         port: 80
       }

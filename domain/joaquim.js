@@ -1,6 +1,6 @@
 module.exports = function () {
   return {
-    domain: 'joaquim.com'
+    domain: 'joaquim.com',
     routes: [
       {
         origin: 'joaquim',
