@@ -1,0 +1,37 @@
+{
+  "name": "multi-hostname-proxy-reverse",
+  "version": "0.0.0",
+  "description": "Manage multiple hostnames with this app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ibanheiz/node-proxy-reverse.git"
+  },
+  "keywords": [
+    "node",
+    "proxy",
+    "reverse"
+  ],
+  "author": [
+    { "name" : "Nicolas Ibanheiz",
+      "email" : "nicolas.ibanheiz@gmail.com",
+      "url" : "http://ibanheiz.com/"
+    },
+    { "name" : "Joaquim Neto",
+      "email" : "jsn.piata@gmail.com",
+      "url" : "http://joaquimsn.com/"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ibanheiz/node-proxy-reverse/issues"
+  },
+  "homepage": "https://github.com/Ibanheiz/node-proxy-reverse#readme",
+  "dependencies": {
+    "http-proxy": "^1.12.0"
+  }
+}
