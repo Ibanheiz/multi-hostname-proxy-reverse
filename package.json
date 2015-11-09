@@ -4,7 +4,7 @@
   "description": "Manage multiple hostnames with this app.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "gulp test",
     "start": "nodemon"
   },
   "repository": {
@@ -17,13 +17,15 @@
     "reverse"
   ],
   "author": [
-    { "name" : "Nicolas Ibanheiz",
-      "email" : "nicolas.ibanheiz@gmail.com",
-      "url" : "http://ibanheiz.com/"
+    {
+      "name": "Nicolas Ibanheiz",
+      "email": "nicolas.ibanheiz@gmail.com",
+      "url": "http://ibanheiz.com/"
     },
-    { "name" : "Joaquim Neto",
-      "email" : "jsn.piata@gmail.com",
-      "url" : "http://joaquimsn.com/"
+    {
+      "name": "Joaquim Neto",
+      "email": "jsn.piata@gmail.com",
+      "url": "http://joaquimsn.com/"
     }
   ],
   "license": "MIT",
@@ -33,5 +35,10 @@
   "homepage": "https://github.com/Ibanheiz/node-proxy-reverse#readme",
   "dependencies": {
     "http-proxy": "^1.12.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.1.3",
+    "should": "^7.1.1"
   }
 }
