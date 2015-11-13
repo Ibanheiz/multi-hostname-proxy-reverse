@@ -4,8 +4,8 @@ module.exports = function () {
     routes: [
       {
         origin: 'example',
-        target: 'http://localhost',
-        port: 8080
+        target: 'http://jovetecnologia.com',
+        port: 80
       },
       {
         origin: 'blog',

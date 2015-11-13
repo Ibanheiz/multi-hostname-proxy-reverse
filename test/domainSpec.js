@@ -1,6 +1,6 @@
-var should = require('should')
-    ,fs = require('fs')
-    ,domains = fs.readdirSync('./domain');
+var should = require('should'),
+    fs = require('fs'),
+    domains = fs.readdirSync('./domain');
 
 describe('Testing domains files', function () {
   it('Domains should be have domain property', function () {
@@ -19,7 +19,7 @@ describe('Testing domains files', function () {
     });
   });
 
-  it("Property route should be have 'origin' and has type String", function() {
+  it("Property route should be have 'origin' and have type String", function() {
     domains.forEach(function (file) {
       var domain = require('./../domain/' + file)();
       domain.routes.forEach(function (route) {
@@ -29,7 +29,7 @@ describe('Testing domains files', function () {
     });
   });
 
-  it("Property route should be have 'target', has type String and start with 'http://'", function() {
+  it("Property route should be have 'target', have type String and start with 'http://'", function() {
     domains.forEach(function (file) {
       var domain = require('./../domain/' + file)();
       domain.routes.forEach(function (route) {
@@ -40,7 +40,7 @@ describe('Testing domains files', function () {
     });
   });
 
-  it("Property route should be have 'port', has type Number", function() {
+  it("Property route should be have 'port', have type Number and value between 0 and 65536", function() {
     domains.forEach(function (file) {
       var domain = require('./../domain/' + file)();
       domain.routes.forEach(function (route) {

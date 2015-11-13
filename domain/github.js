@@ -13,5 +13,5 @@ module.exports = function () {
         port: 80
       }
     ]
-  }
+  };
 };
