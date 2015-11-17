@@ -2,12 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Houve um erro</title>
+  <title>Proxy Error</title>
+  <style type="text/css">
+    html, body {
+      background: #EEE;
+    }
+    .container {
+      width: 60%;
+      margin: 180px auto 0 auto;
+      font-family: arial, sans-serif;
+    }
+    .title {
+      font-size: 50px;
+      color: #42acd6;
+      text-transform: uppercase;
+    }
+    .message {
+      font-size: 25px;
+      color: #333;
+    }
+    .target {
+      color: #666;
+    }
+    .target span {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <h1>#ErrorTitle</h1>
-  <p>#ErrorMessage</p>
-  <p>Target domain: #ErrorDomain</p>
-  <p>Target port: #ErrorPort</p>
+  <div class="container">
+    <h1 class="title">#ErrorTitle</h1>
+    <p class="message">#ErrorMessage</p>
+    <p class="target">Target domain: <span>#ErrorDomain<span></p>
+    <p class="target">Target port: <span>#ErrorPort</span></p>
+  </div>
 </body>
 </html>

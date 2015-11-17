@@ -1,5 +1,7 @@
-var should = require('should'),
-    fs = require('fs'),
+"use strict";
+
+var should  = require('should'),
+    fs      = require('fs'),
     domains = fs.readdirSync('./domain');
 
 describe('Testing domains files', function () {

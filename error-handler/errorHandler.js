@@ -1,9 +1,19 @@
+"use strict";
+
+function _buildHtmlError(data, err, errorObject) {
+  data = data.replace('#ErrorTitle', errorObject.property.title);
+  data = data.replace('#ErrorMessage', errorObject.property.message);
+  data = data.replace('#ErrorDomain', err.hostname);
+  data = data.replace('#ErrorPort', err.port);
+  return data;
+}
+
 module.exports = {
   send: function (err, res) {
-    var fs = require('fs');
-    var errorMap = require('./errorMap');
-    var errorCode = err.code;
-    var erro;
+    var fs        = require('fs'),
+        errorMap  = require('./errorMap'),
+        errorCode = err.code,
+        errorObject = errorMap[errorCode];
 
     res.writeHead(res.statusCode, {
       'Content-Type': 'text/html'
@@ -13,12 +23,10 @@ module.exports = {
       if (errFile) {
         console.log(errFile);
       }
-      data = data.replace('#ErrorTitle', errorMap[errorCode].property.title);
-      data = data.replace('#ErrorMessage', errorMap[errorCode].property.message);
-      data = data.replace('#ErrorDomain', err.hostname);
-      data = data.replace('#ErrorPort', err.port);
-      res.end(data);
+      if (typeof errorObject === 'undefined') {
+        errorObject = errorMap.DEFAULT;
+      }
+      res.end(_buildHtmlError(data, err, errorObject));
     });
   }
 };
-
