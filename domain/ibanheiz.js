@@ -6,7 +6,7 @@ module.exports = function () {
       {
         origin: 'ibanheiz',
         target: 'http://localhost',
-        port: 4000
+        port: 5000
       },
       {
         origin: 'jenkins',
@@ -16,7 +16,7 @@ module.exports = function () {
       {
         origin: 'locprime',
         target: 'http://localhost',
-        port: 5000
+        port: 4000
       }
     ]
   };
