@@ -1,3 +1,5 @@
+"use strict";
+
 var http          = require('http'),
     httpProxy     = require('http-proxy'),
     core          = require('./lib/core'),
