@@ -1,5 +1,5 @@
 module.exports = {
-  'serverPort': 3080,
+  'serverPort': 3000,
   'tlds': ['.br'],
   'sources': {
     'test': './test/*Spec.js'
